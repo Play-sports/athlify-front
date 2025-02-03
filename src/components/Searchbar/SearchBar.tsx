@@ -1,4 +1,3 @@
-import React from "react";
 import { Button } from "antd";
 import "./Search.css";
 import SportInput from "./SportInput";
