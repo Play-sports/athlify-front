@@ -1,0 +1,34 @@
+.stats-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: linear-gradient(to top, var(--secondary-bg-color), #ff8539);
+  width: 100%;
+  align-items: center;
+  padding: 30px 0px;
+}
+
+.stats-wrapper h2 {
+  text-align: center;
+}
+
+.numbers-wrapper {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+}
+
+.stat-category {
+  text-align: center;
+  color: var(--header-bg-color);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .numbers-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+}

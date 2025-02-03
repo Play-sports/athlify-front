@@ -1,0 +1,29 @@
+.header-wrapper {
+  position: fixed;
+  right: 0;
+  left: 0;
+  display: flex;
+  padding: 15px 150px;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  z-index: 99999;
+  background-color: var(--header-bg-color);
+  box-shadow: -5px 15px 40px -15px rgba(0, 0, 0, 0.75);
+}
+
+.header-wrapper a {
+  color: white;
+}
+
+.header-ctas {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-wrapper {
+    padding: 15px 15px;
+  }
+}

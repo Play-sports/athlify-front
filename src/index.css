@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: --m;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Custom color palette variables */
+  --header-bg-color: #1a265a;
+  --secondary-bg-color: #f1600d;
+  --main-body-color: #fef6ed;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--main-body-color);
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  color: var(--secondary-bg-color);
+  text-decoration: none;
+}
+
+h2,
+h3 {
+  margin: 0;
+}
+
+/* ANTD OVERRIDES */
+.ant-select-selector {
+  border: none !important;
+  outline: none !important;
+}
+
+.ant-btn {
+  font-family: "Roboto", sans-serif !important;
+}
+
+button {
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+}
+
+form {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  gap: 12px;
+  text-align: center;
+}
+
+textarea,
+input {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  width: 100%;
+  color: black !important;
+}
+
+.wrapper {
+  padding: 20px 150px;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    padding: 0px 10px;
+  }
+}

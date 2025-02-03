@@ -1,0 +1,21 @@
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+}
+
+.home-upper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  align-items: center;
+  padding: 150px 0;
+  background: url(../../assets/athlify-background.png);
+}
+
+.home-upper h1 {
+  font-size: 45px;
+  color: white;
+}

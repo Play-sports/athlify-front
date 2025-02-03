@@ -1,0 +1,74 @@
+.company-main-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.banner-wrapper {
+  background-image: url("../../assets/bannertest.png");
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  color: white;
+  position: relative;
+  background-position-y: 580px;
+  padding: 15px;
+}
+
+h1,
+.banner-wrapper div {
+  z-index: 0; /* Text will be above the overlay */
+}
+
+.schedule-wrapper {
+  display: flex;
+  gap: 40px;
+  background: white;
+  flex-direction: column;
+  width: fit-content;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.schedule-wrapper > div > div {
+  padding-bottom: 10px;
+}
+
+.info-wrapper {
+  display: flex;
+  gap: 40px;
+  background: white;
+  flex-direction: column;
+  width: fit-content;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.banner-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgb(0, 0, 0), rgba(255, 255, 255, 0.15));
+  z-index: 1; /* Ensure the overlay is below the text */
+}
+
+.company-contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 600px) {
+  .company-contact-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .schedule-wrapper {
+    width: 100%;
+  }
+}

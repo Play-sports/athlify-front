@@ -1,0 +1,12 @@
+.footer-wrapper {
+  background: var(--header-bg-color);
+  padding: 15px 150px;
+  border-top: 1px solid var(--main-body-color);
+  color: var(--main-body-color);
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-wrapper {
+    padding: 15px 15px;
+  }
+}
