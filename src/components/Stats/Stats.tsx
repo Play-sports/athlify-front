@@ -1,4 +1,3 @@
-import React from "react";
 import AnimatedNumbers from "react-animated-numbers";
 import "./Stats.css";
 import CtaButton from "../CtaButton/CtaButton";

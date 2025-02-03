@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Company, CompanyResultsProps } from "../../types";
+import { useEffect, useState } from "react";
+import { Company } from "../../types";
 import CompanyCard from "./CompanyCard/CompanyCard";
 import "./CompanyResults.css";
 import Filterbar from "./FilterBar/Filterbar";

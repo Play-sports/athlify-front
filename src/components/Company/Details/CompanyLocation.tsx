@@ -1,8 +1,7 @@
-import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
-function CompanyLocation({ data }: { data: any[] }) {
+function CompanyLocation({ data }: { data: any }) {
   return (
     <div>
       <h3>Location</h3>

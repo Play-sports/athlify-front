@@ -1,5 +1,3 @@
-import React from "react";
-
 function UserInfo() {
   return (
     <div className="temp" style={{ flex: 3 }}>

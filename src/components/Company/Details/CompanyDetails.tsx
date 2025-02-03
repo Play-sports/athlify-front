@@ -1,4 +1,3 @@
-import React from "react";
 import Info from "./CompanyInfo";
 import CompanySchedule from "./CompanySchedule";
 import CompanyCarousel from "./CompanyCarousel";

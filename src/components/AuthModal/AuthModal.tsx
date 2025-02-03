@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Modal, Button, Select, Space } from "antd";
+import { useState } from "react";
+import { Modal, Select } from "antd";
 import "antd/dist/reset.css";
 import "./AuthModal.css";
 import sportsOptions from "../../sportsOptions";

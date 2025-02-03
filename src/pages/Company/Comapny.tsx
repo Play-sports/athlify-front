@@ -1,5 +1,4 @@
-import React from "react";
-import { useLocation } from "react-router-dom";
+dimport { useLocation } from "react-router-dom";
 import "./Company.css";
 import CompanyView from "../../components/Company/CompanyView";
 

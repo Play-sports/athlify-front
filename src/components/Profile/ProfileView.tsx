@@ -1,4 +1,3 @@
-import React from "react";
 import Feedback from "./Feedback";
 import "./Profile.css";
 import ActivitiesHistory from "./ActivitiesHistory";

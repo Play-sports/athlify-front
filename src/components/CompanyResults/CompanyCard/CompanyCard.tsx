@@ -1,4 +1,3 @@
-import React from "react";
 import { Company } from "../../../types";
 import { Card } from "antd";
 import { Link } from "react-router-dom";

@@ -1,4 +1,3 @@
-import React from "react";
 import CompanyResults from "../../components/CompanyResults/CompanyResults";
 import { useLocation } from "react-router-dom";
 
@@ -7,7 +6,7 @@ function Search() {
 
   return (
     <div>
-      <CompanyResults companies={state.companies} />
+      <CompanyResults companies={state.companies} isHome={false} />
     </div>
   );
 }

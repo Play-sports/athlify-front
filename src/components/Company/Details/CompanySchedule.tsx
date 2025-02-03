@@ -1,5 +1,3 @@
-import React from "react";
-
 function CompanySchedule() {
   return (
     <div className="schedule-wrapper">

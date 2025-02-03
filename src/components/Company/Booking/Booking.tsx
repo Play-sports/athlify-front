@@ -1,4 +1,3 @@
-import React from "react";
 import type { BadgeProps, CalendarProps } from "antd";
 import { Badge, Calendar } from "antd";
 import type { Dayjs } from "dayjs";
@@ -27,13 +26,13 @@ const getListData = (value: Dayjs) => {
   return listData || [];
 };
 
-const getMonthData = (value: Dayjs) => {
+const getMonthData = () => {
   return 0;
 };
 
 function Booking() {
-  const monthCellRender = (value: Dayjs) => {
-    const num = getMonthData(value);
+  const monthCellRender = () => {
+    const num = getMonthData();
     return num ? (
       <div className="notes-month">
         <section>{num}</section>
@@ -61,7 +60,7 @@ function Booking() {
 
   const cellRender: CalendarProps<Dayjs>["cellRender"] = (current, info) => {
     if (info.type === "date") return dateCellRender(current);
-    if (info.type === "month") return monthCellRender(current);
+    if (info.type === "month") return monthCellRender();
     return info.originNode;
   };
 

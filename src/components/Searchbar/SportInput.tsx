@@ -1,4 +1,3 @@
-import React from "react";
 import { Select, Space } from "antd";
 import sportsOptions from "../../sportsOptions";
 
