@@ -2,23 +2,23 @@ import { SportCategory } from "./types";
 
 const sportsOptions: SportCategory[] = [
   {
-    label: "Team Sports", // ❌ Removed <b> JSX
+    label: "Team Sports",
     title: "team sports",
     options: [
       {
         label: "Football",
         value: "football",
-        src: "../src/assets/football.png", // ✅ Corrected image path
+        src: "/football.png",
       },
       {
         label: "Basketball",
         value: "basketball",
-        src: "../src/assets/basketball.png",
+        src: "/basketball.png",
       },
       {
         label: "Volleyball",
         value: "volleyball",
-        src: "../src/assets/volleyball.png",
+        src: "/volleyball.png",
       },
     ],
   },
@@ -29,12 +29,12 @@ const sportsOptions: SportCategory[] = [
       {
         label: "Tennis",
         value: "tennis",
-        src: "../src/assets/tennis.png",
+        src: "/tennis.png",
       },
       {
         label: "Padel",
         value: "padel",
-        src: "../src/assets/padel.png",
+        src: "/padel.png",
       },
     ],
   },

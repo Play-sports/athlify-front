@@ -25,6 +25,8 @@
   border-radius: 10px;
   justify-content: space-evenly;
   color: var(--header-bg-color);
+  width: 90px;
+  text-align: center;
 }
 
 .time-slot-disabled {

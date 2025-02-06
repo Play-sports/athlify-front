@@ -19,3 +19,17 @@
   font-size: 45px;
   color: white;
 }
+
+.home-middle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 150px;
+}
+
+@media only screen and (max-width: 600px) {
+  .home-middle {
+    padding: 0px 10px;
+    flex-direction: column;
+  }
+}

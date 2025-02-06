@@ -9,8 +9,8 @@ function CompanyCard({ data }: { data: Company }) {
     <Link to={`/club/${data.id}`} state={data}>
       <Card
         hoverable
-        style={{ width: 380 }}
-        cover={<img alt="Club image" src="src\assets\tmp_backdrop.jpg" />}
+        style={{ width: 350 }}
+        cover={<img alt="Club image" src="/tmp_backdrop.jpg" />}
       >
         <Meta title={data.name} description={`${data.city}, ${data.area}`} />
       </Card>

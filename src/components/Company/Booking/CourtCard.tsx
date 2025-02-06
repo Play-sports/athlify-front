@@ -11,7 +11,7 @@ function CourtCard() {
     <Card
       hoverable
       className="court-container"
-      cover={<img alt="example" src="\src\assets\testcourt.jpg" />}
+      cover={<img alt="example" src="/testcourt.jpg" />}
     >
       <BookingModal show={showBooking} onExit={() => setShowBooking(false)} />
       <Meta title="Court #1" />

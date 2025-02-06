@@ -3,27 +3,27 @@ import { useState } from "react";
 const sports = [
   {
     name: "All",
-    src: "../../src/assets/all.png",
+    src: "/all.png",
   },
   {
     name: "Football",
-    src: "../../src/assets/football.png",
+    src: "/football.png",
   },
   {
     name: "Basketball",
-    src: "../../src/assets/basketball.png",
+    src: "/basketball.png",
   },
   {
     name: "Tennis",
-    src: "../../src/assets/tennis.png",
+    src: "/tennis.png",
   },
   {
     name: "Padel",
-    src: "../../src/assets/padel.png",
+    src: "/padel.png",
   },
   {
     name: "Volleyball",
-    src: "../../src/assets/volleyball.png",
+    src: "/volleyball.png",
   },
 ];
 
