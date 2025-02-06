@@ -49,13 +49,7 @@ function CompanyResults({ isHome }: { isHome: boolean }) {
         )}
       </div>
       {isHome && (
-        <Link
-          className="view-more-button"
-          to={"/search"}
-          state={{
-            companies: companies,
-          }}
-        >
+        <Link className="view-more-button" to={"/explore"}>
           View more
         </Link>
       )}

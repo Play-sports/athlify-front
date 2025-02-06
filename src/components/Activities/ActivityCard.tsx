@@ -39,6 +39,7 @@ function ActivityCard({
   return (
     <Card
       className="activity-card-container"
+      style={{ width: 380 }}
       cover={
         <img
           alt="example"

@@ -11,11 +11,11 @@
 }
 
 .slide-in-left {
-  animation: slideFromLeft 0.75s ease-out forwards;
+  animation: slideFromLeft 0.65s ease-out forwards;
 }
 
 .slide-in-right {
-  animation: slideFromRight 0.75s ease-out forwards;
+  animation: slideFromRight 0.65s ease-out forwards;
 }
 
 @keyframes slideFromLeft {

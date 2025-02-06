@@ -74,7 +74,7 @@ function Explore() {
     <div className="wrapper">
       <div className="segment-wrapper">
         <Segmented
-          style={{ fontSize: "25px" }}
+          style={{ fontSize: "24px" }}
           options={["Activities", "Sport Center"]}
           name="group"
           onChange={(value) => setExploreOption(value)}

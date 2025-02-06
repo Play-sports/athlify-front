@@ -72,6 +72,10 @@ input {
   .wrapper {
     padding: 0px 10px;
   }
+
+  .wrapper .ant-segmented-item-label {
+    padding: 10px 20px !important;
+  }
 }
 
 /* ANTD OVERRIDES */

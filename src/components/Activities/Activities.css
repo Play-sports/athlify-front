@@ -110,3 +110,9 @@
   background-color: var(--header-bg-color) !important;
   color: white;
 }
+
+@media only screen and (max-width: 600px) {
+  .activities-card-wrapper {
+    justify-content: center;
+  }
+}
