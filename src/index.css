@@ -16,7 +16,7 @@
   /* Custom color palette variables */
   --header-bg-color: #1a265a;
   --secondary-bg-color: #f1600d;
-  --main-body-color: #fef6ed;
+  --main-body-color: #fef8f2;
 }
 
 body {
@@ -35,16 +35,6 @@ a {
 h2,
 h3 {
   margin: 0;
-}
-
-/* ANTD OVERRIDES */
-.ant-select-selector {
-  border: none !important;
-  outline: none !important;
-}
-
-.ant-btn {
-  font-family: "Roboto", sans-serif !important;
 }
 
 button {
@@ -82,4 +72,24 @@ input {
   .wrapper {
     padding: 0px 10px;
   }
+}
+
+/* ANTD OVERRIDES */
+.ant-select-selector {
+  border: none !important;
+  outline: none !important;
+}
+
+.ant-btn {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.ant-modal-content {
+  font-family: "Montserrat", sans-serif;
+}
+
+.ant-segmented-item-label {
+  padding: 20px 60px !important;
+  font-family: "Montserrat", sans-serif;
+  color: var(--header-bg-color) !important;
 }

@@ -26,3 +26,19 @@ export type SportCategory = {
 export type CompanyResultsProps = {
   companies: Company[];
 };
+
+type PlayerLevel = "Amateur" | "Casual" | "Intermediate";
+
+interface Player {
+  name: string;
+  level: PlayerLevel;
+}
+
+export type Activity = {
+  sport: "basketball" | "padel" | "tennis";
+  title: string;
+  description: string;
+  location: "Thessaloniki" | "Athens";
+  date: string; // Using ISO date format as string
+  players: Player[];
+};

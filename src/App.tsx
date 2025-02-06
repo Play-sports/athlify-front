@@ -5,6 +5,7 @@ import Comapny from "./pages/Company/Comapny";
 import Search from "./pages/Search/Search";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import Profile from "./pages/Profile/Profile";
+import Explore from "./pages/Activities/Explore";
 
 function App() {
   return (
@@ -33,6 +34,14 @@ function App() {
             element={
               <Layout>
                 <Profile />
+              </Layout>
+            }
+          />
+          <Route
+            path="/explore"
+            element={
+              <Layout>
+                <Explore />
               </Layout>
             }
           />

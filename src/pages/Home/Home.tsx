@@ -27,7 +27,7 @@ function Home() {
         <h1>Booking Games, Connecting People</h1>
         <ClubSearch companies={companyData} />
       </div>
-      <ComapnyResults companies={companyData} isHome={true} />
+      <ComapnyResults isHome={true} />
       <Stats />
     </div>
   );

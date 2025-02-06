@@ -4,18 +4,14 @@ import CompanyCard from "./CompanyCard/CompanyCard";
 import "./CompanyResults.css";
 import Filterbar from "./FilterBar/Filterbar";
 import { Link } from "react-router-dom";
+import { useCompany } from "../../hooks/useCompanyContext";
 
-function CompanyResults({
-  companies,
-  isHome,
-}: {
-  companies: Company[];
-  isHome: boolean;
-}) {
+function CompanyResults({ isHome }: { isHome: boolean }) {
   const [activeSport, setActiveSport] = useState("all");
   const [filterText, setFilterText] = useState("");
 
   const [filteredCompanies, setFilteredCompanies] = useState<Company[]>([]);
+  const companies = useCompany();
 
   useEffect(() => {
     setFilteredCompanies(
@@ -33,14 +29,14 @@ function CompanyResults({
   }, [activeSport, filterText, companies]);
 
   return (
-    <div className="main-results-section wrapper">
+    <div className="main-results-section">
       {isHome && <h2 style={{ color: "black" }}>Featured clubs</h2>}
       <Filterbar
         filterSport={(sport: string) => setActiveSport(sport.toLowerCase())}
         filterName={(txt) => setFilterText(txt)}
         isHome={isHome}
       />
-      <div className="results-wrapper">
+      <div className="results-wrapper slide-in-left">
         {filteredCompanies.length === 0 ? (
           <div>
             `No sport centers for <b>{activeSport}</b> have been added yet.

@@ -8,7 +8,13 @@ function AuthModal({ shown, onExit }: { shown: boolean; onExit: () => void }) {
   const [isSignUpActive, setIsSignUpActive] = useState(false);
 
   return (
-    <Modal open={shown} onCancel={() => onExit()} footer={null} width={"768px"}>
+    <Modal
+      open={shown}
+      className="signup-modal"
+      onCancel={() => onExit()}
+      footer={null}
+      width={"768px"}
+    >
       <div
         className={`container ${isSignUpActive ? "right-panel-active" : ""}`}
         id="container"
@@ -34,6 +40,7 @@ function AuthModal({ shown, onExit }: { shown: boolean; onExit: () => void }) {
             <Select
               className="favourite-sport"
               placeholder="Favorite sport"
+              mode="multiple"
               allowClear
               options={sportsOptions.map((c) => c.options).flat()}
             />

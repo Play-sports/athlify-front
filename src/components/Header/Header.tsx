@@ -15,6 +15,7 @@ function Header() {
         <Link to="/">Athlify Logo</Link>
       </div>
       <div className="header-ctas">
+        <Link to="/explore">Explore</Link>
         <Link to="/profile">Profile</Link>
         <CtaButton onClick={openSignUp} />
       </div>

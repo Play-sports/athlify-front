@@ -1,0 +1,112 @@
+.activities-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.activities-card-wrapper {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.activity-card-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.activity-card-container {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.activities-create-container {
+  text-align: center;
+  background: linear-gradient(to top, var(--secondary-bg-color), #ff8539);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0px;
+  gap: 30px;
+}
+
+.activity-card-footer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  color: var(--header-bg-color);
+}
+
+.activity-modal-wrapper {
+  display: flex;
+}
+
+.activity-modal-details {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-detail {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.activity-detail-header {
+  font-weight: 800;
+}
+
+.activity-modal-players {
+  flex: 1;
+  border-left: 1px solid rgb(231, 231, 231);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.join-button {
+  background-color: var(--header-bg-color);
+  padding: 10px 25px;
+  color: white;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+.activity-create-btn {
+  background-color: var(--header-bg-color);
+  padding: 5px 25px;
+  color: white;
+  border-radius: 20px;
+}
+
+.pagination-wrapper {
+  display: flex;
+  justify-content: end;
+}
+
+.pagination-wrapper > .ant-pagination-item {
+  border: 2px solid var(--header-bg-color);
+}
+.pagination-wrapper > .ant-pagination-item > a {
+  color: var(--header-bg-color);
+}
+
+.pagination-wrapper > .ant-pagination-item-active {
+  border: 2px solid var(--header-bg-color);
+  background: var(--header-bg-color);
+}
+
+.pagination-wrapper > .ant-pagination-item-active > a {
+  color: white;
+}
+
+.ant-select-item-option:hover {
+  background-color: var(--header-bg-color) !important;
+  color: white;
+}

@@ -62,6 +62,28 @@ h1,
   justify-content: space-between;
 }
 
+.court-wrapper {
+  display: flex;
+  gap: 60px;
+}
+
+.court-container {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.book-button {
+  background: var(--header-bg-color);
+  color: white;
+  padding: 10px 25px;
+  border-radius: 50px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 @media only screen and (max-width: 600px) {
   .company-contact-wrapper {
     flex-direction: column;
@@ -70,5 +92,15 @@ h1,
 
   .schedule-wrapper {
     width: 100%;
+  }
+
+  .court-wrapper {
+    overflow: hidden;
+    overflow-x: scroll;
+    gap: 20px;
+  }
+
+  .court-container {
+    min-width: 350px;
   }
 }

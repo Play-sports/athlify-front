@@ -1,0 +1,27 @@
+.new-activity-wrapper {
+  border: 1.5px dashed var(--header-bg-color);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 417px;
+  padding: 10px 50px;
+  gap: 40px;
+  background: rgba(255, 136, 0, 0.1);
+  background-image: url("../../../assets/basketball-player-s.png");
+  width: 320px;
+  font-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 20px 50px;
+  user-select: none;
+}
+
+.new-activity-wrapper:hover {
+  cursor: pointer;
+  background: white;
+  background-image: url("../../../assets/basketball-player-s.png");
+  background-repeat: no-repeat;
+  background-position: 20px 50px;
+  border: 1px dashed;
+}
