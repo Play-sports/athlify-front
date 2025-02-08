@@ -13,7 +13,7 @@ function CompanyCarousel() {
     color: "#fff",
     lineHeight: "160px",
     textAlign: "center",
-    background: "url('../../../src/assets/test-slider.jpg')",
+    background: "url('/test-slider.jpg')",
     borderRadius: "10px",
   };
 

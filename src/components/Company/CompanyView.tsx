@@ -8,7 +8,7 @@ function CompanyView({ data }: { data: any }) {
   return (
     <div className="company-main-wrapper wrapper">
       <CompanyBanner data={data} />
-      <Booking />
+      <Booking clubId={data.id} />
       <CompanyDetails />
       <CompanyLocation data={data?.coordinates} />
     </div>

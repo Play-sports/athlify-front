@@ -10,7 +10,17 @@ const getCompanies = async () => {
   }
 };
 
-export { getCompanies };
+const getCourtAvailability = async (id: string) => {
+  try {
+    const data = await fetch(`${URL}/user/companies/${id}/courts/availability`);
+    return data.json();
+  } catch (e) {
+    console.error(e);
+    return false;
+  }
+};
+
+export { getCompanies, getCourtAvailability };
 
 // COURT AVAILABILITY  ROUTE -->  /company/id/availability  ~id is parameter
 export type API_COURTS = {

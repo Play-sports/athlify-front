@@ -60,7 +60,7 @@ function ActivityCard({
       ]}
     >
       <Meta
-        avatar={<img src={`src\\assets\\${data.sport}.png`} width={20} />}
+        avatar={<img src={`/${data.sport}.png`} width={20} />}
         title={
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <div>{data.title}</div>

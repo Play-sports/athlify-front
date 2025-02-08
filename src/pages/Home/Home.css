@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 100px;
 }
 
 .home-upper {
@@ -11,8 +10,8 @@
   gap: 40px;
   width: 100%;
   align-items: center;
-  padding: 150px 0;
-  background: url(../../assets/athlify-background.png);
+  padding: 100px 0;
+  background: url(/athlify-background.png);
 }
 
 .home-upper h1 {
@@ -25,11 +24,21 @@
   display: flex;
   justify-content: center;
   padding: 20px 150px;
+  margin-top: 250px;
+  margin-bottom: 100px;
 }
 
 @media only screen and (max-width: 600px) {
   .home-middle {
     padding: 0px 10px;
     flex-direction: column;
+  }
+
+  .home-upper {
+    background-repeat: no-repeat;
+  }
+
+  .home-middle {
+    margin-top: 50px;
   }
 }

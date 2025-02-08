@@ -1,7 +1,7 @@
 .booking-modal-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
 }
 
 .process-container {
@@ -27,6 +27,17 @@
   color: var(--header-bg-color);
   width: 90px;
   text-align: center;
+  user-select: none;
+  cursor: pointer;
+}
+
+.time-slot-selected {
+  background: palegreen;
+}
+
+.time-slot-taken {
+  background: var(--secondary-bg-color);
+  cursor: not-allowed;
 }
 
 .time-slot-disabled {
@@ -37,7 +48,7 @@
 .process-upper {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
 }
 
 .confirm-button {
@@ -47,10 +58,24 @@
   border-radius: 10px;
 }
 
+.confirm-button:hover {
+  cursor: pointer;
+}
+
 .ant-steps-item-icon {
   background-color: var(--header-bg-color) !important;
 }
 
 .ant-steps-item-icon svg {
   color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .booking-modal-wrapper {
+    gap: 0px;
+  }
+
+  .process-upper {
+    gap: 0px;
+  }
 }

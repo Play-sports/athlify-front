@@ -168,13 +168,8 @@
   transform: translateX(20%);
 }
 
-.social-container {
-  margin: 20px 0;
-}
-
 .social-container a {
   border-radius: 50%;
-  border: 2px solid black;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -185,4 +180,46 @@
 
 .signup-modal > div > .ant-modal-content {
   padding: 0px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .overlay-container {
+    display: none;
+  }
+  .sign-in-container {
+    width: 100%;
+    transform: unset;
+  }
+
+  .social {
+    background: white;
+  }
+
+  .sign-up-container {
+    width: 100%;
+    transform: unset;
+  }
+
+  .container {
+    background: transparent;
+    min-height: 575px;
+  }
+
+  .container.right-panel-active .sign-up-container {
+    transform: unset;
+  }
+
+  .container .sign-up-container {
+    transform: translateX(-100%);
+  }
+
+  .form-container > form > *:last-child {
+    position: absolute;
+    bottom: 20px;
+  }
+
+  form {
+    padding: 35px 50px;
+    justify-content: unset;
+  }
 }

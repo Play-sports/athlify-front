@@ -15,8 +15,8 @@
 
   /* Custom color palette variables */
   --header-bg-color: #1a265a;
-  --secondary-bg-color: #f1600d;
-  --main-body-color: #fef8f2;
+  --secondary-bg-color: #ff8037;
+  --main-body-color: #fefcfb;
 }
 
 body {
@@ -28,7 +28,7 @@ body {
 }
 
 a {
-  color: var(--secondary-bg-color);
+  color: var(--header-bg-color);
   text-decoration: none;
 }
 
@@ -44,7 +44,7 @@ button {
 }
 
 form {
-  background-color: #ffffff;
+  background-color: var(--main-body-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,6 +90,7 @@ input {
 
 .ant-modal-content {
   font-family: "Montserrat", sans-serif;
+  border-radius: 20px !important;
 }
 
 .ant-segmented-item-label {

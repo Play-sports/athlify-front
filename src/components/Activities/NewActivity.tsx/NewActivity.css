@@ -9,19 +9,62 @@
   padding: 10px 50px;
   gap: 40px;
   background: rgba(255, 136, 0, 0.1);
-  background-image: url("../../../assets/basketball-player-s.png");
+  background-image: url("/basketball-player-s.png");
   width: 350px;
   font-size: 20px;
   background-repeat: no-repeat;
-  background-position: 20px 50px;
+  background-position: 40px 50px;
   user-select: none;
+  transform: scale(0.8);
 }
 
 .new-activity-wrapper:hover {
   cursor: pointer;
   background: white;
-  background-image: url("../../../assets/basketball-player-s.png");
+  background-image: url("/basketball-player-s.png");
   background-repeat: no-repeat;
-  background-position: 20px 50px;
+  background-position: 40px 50px;
   border: 1px dashed;
+}
+
+.new-activity-modal-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.new-activity-row {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.new-activity-row > * {
+  width: 170px;
+}
+
+.new-activity-row > .ant-select {
+  width: 200px;
+  padding: 0px;
+}
+
+.new-activity-row > .ant-select > .ant-select-selector {
+  padding: 0px !important;
+}
+
+.new-activity-row > input {
+  height: 32px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.04);
+}
+.activity-select-sport {
+  width: 100%;
+  border-radius: 10px;
+  padding-inline: 10px;
+  height: 100%;
+}
+
+.activity-select-players {
+  border-radius: 10px;
 }

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Modal, Select } from "antd";
+import { Divider, Modal, Select } from "antd";
 import "antd/dist/reset.css";
 import "./AuthModal.css";
 import sportsOptions from "../../sportsOptions";
@@ -21,19 +21,16 @@ function AuthModal({ shown, onExit }: { shown: boolean; onExit: () => void }) {
       >
         <div className="form-container sign-up-container">
           <form>
-            <h1>Create Account</h1>
+            <h1 style={{ margin: "0" }}>Create Account</h1>
             <div className="social-container">
               <a href="#" className="social">
-                <img
-                  src="../../../src/assets/facebook.png"
-                  width={"32px"}
-                ></img>
+                <img src="/facebook.png" width={"32px"}></img>
               </a>{" "}
               <a href="#" className="social">
-                <img src="../../../src/assets/google.png" width={"32px"}></img>
+                <img src="/google.png" width={"32px"}></img>
               </a>
             </div>
-            <span>or use your email for registration</span>
+            <Divider orientation="center">or</Divider>
             <input type="text" placeholder="Name" />
             <input type="email" placeholder="Email" />
             <input type="password" placeholder="Password" />
@@ -47,29 +44,38 @@ function AuthModal({ shown, onExit }: { shown: boolean; onExit: () => void }) {
             <button className="sign-up-button" type="button">
               Sign Up
             </button>
+            {window.innerWidth < 600 && (
+              <div>
+                Already a member?{" "}
+                <a onClick={() => setIsSignUpActive(false)}>Log in here!</a>
+              </div>
+            )}
           </form>
         </div>
         <div className="form-container sign-in-container">
           <form>
-            <h1>Sign in</h1>
+            <h1 style={{ margin: "0" }}>Sign in</h1>
             <div className="social-container">
               <a href="#" className="social">
-                <img
-                  src="../../../src/assets/facebook.png"
-                  width={"32px"}
-                ></img>
+                <img src="/facebook.png" width={"32px"}></img>
               </a>{" "}
               <a href="#" className="social">
-                <img src="../../../src/assets/google.png" width={"32px"}></img>
+                <img src="/google.png" width={"32px"}></img>
               </a>
             </div>
-            <span>or use your account</span>
+            <Divider orientation="center">or </Divider>
             <input type="email" placeholder="Email" />
             <input type="password" placeholder="Password" />
             <a href="#">Forgot your password?</a>
             <button className="sign-up-button" type="button">
               Sign In
             </button>
+            {window.innerWidth < 600 && (
+              <div>
+                Don't have an account?{" "}
+                <a onClick={() => setIsSignUpActive(true)}>Sign up here</a>
+              </div>
+            )}
           </form>
         </div>
         <div className="overlay-container">

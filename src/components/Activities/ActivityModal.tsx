@@ -25,11 +25,7 @@ function ActivityModal({
             <div>
               <h3 className="activity-detail-header">Sport</h3>
               <div className="activity-detail">
-                <img
-                  src={`src\\assets\\${data.sport}.png`}
-                  width={16}
-                  height={16}
-                />
+                <img src={`/${data.sport}.png`} width={16} height={16} />
                 <div>{data.sport}</div>
               </div>
             </div>

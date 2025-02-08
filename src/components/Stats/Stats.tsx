@@ -3,7 +3,7 @@ import CtaButton from "../CtaButton/CtaButton";
 import { useAuthModal } from "../../hooks/useAuthModal";
 
 const AnimatedNumber = ({ number }: { number: number }) => {
-  return <div>{number}</div>;
+  return <div style={{ fontSize: "100px", color: "white" }}>{number}</div>;
 };
 
 function Stats() {

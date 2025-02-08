@@ -11,6 +11,12 @@ type Sport = {
   name: string;
 };
 
+export type CourtData = {
+  court_id: number;
+  court_name: string;
+  booked: any[];
+};
+
 export type SportOption = {
   label: string;
   value: string;
